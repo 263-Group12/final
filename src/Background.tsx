@@ -42,10 +42,9 @@ function Camera(props: any) {
 
 function Box(props: any) {
     const mesh = useRef();
-    const [right, setRight] = useState(props.right);
     useFrame(() => {
         // @ts-ignore
-        right ? mesh.current.rotation.x += 0.01 : mesh.current.rotation.x -= 0.01;
+        props.right ? mesh.current.rotation.x += 0.01 : mesh.current.rotation.x -= 0.01;
         // @ts-ignore
         mesh.current.rotation.y += 0.005;
     });
