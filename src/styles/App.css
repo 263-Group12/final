@@ -1,0 +1,38 @@
+.App {
+  height: 100%;
+  min-height: 100%;
+}
+
+.BackgroundDiv {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Background {
+  z-index: 0;
+}
+
+.Content {
+  z-index: 10;
+  text-align: center;
+  padding: 2%;
+  position: relative;
+}
+
+.Title {
+  z-index: 10;
+  text-align: left;
+}
+
+.GridUnit {
+  z-index: 10;
+}
+
+.App-link {
+  color: #61dafb;
+}
