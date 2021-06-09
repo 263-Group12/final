@@ -12,10 +12,10 @@ function Camera(props: any) {
         return [4 * Math.cos(angle), 4 * Math.sin(angle), 4 * Math.cos(angle)];
     }
 
-    const mouseWheelHandler = (event: any) => {
+    const mouseWheelHandler = () => {
         const dist = document.body.getBoundingClientRect().top;
 
-        const radians = 2 * 3.1415 * (dist / 2000)
+        const radians = 2 * 3.1415 * ((dist + 500) / 2000)
 
         let [deltaY, deltaZ, deltaX] = translation(radians);
 
