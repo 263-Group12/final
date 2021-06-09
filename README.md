@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <br/> In order to run this project locally, please run `npm start` 
-<br/> Otherwise visit a hosted version [Here](https://youthful-nobel-c94703.netlify.app/).
+<br/> Otherwise visit a hosted version [Here](https://263-final.netlify.app/).
 
 # Validity and Accessibility
 ### W3C HTML Check
