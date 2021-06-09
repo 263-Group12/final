@@ -115,7 +115,7 @@ function App() {
                         <Typography variant={"h2"}>
                             Affinity Diagram
                         </Typography>
-                        <img src={"../Notes.png"} width={1400}
+                        <img src={"../Notes.png"} width={"100%"}
                              alt={"A portion of our affinity diagram. Yellow sticky notes are our interview notes. Green sticky notes are the conclusions we made for each affinity group."}/>
                         <Typography variant={"body1"}>
                             A portion of our affinity diagram. Yellow sticky notes are our interview notes. Green sticky
@@ -126,17 +126,112 @@ function App() {
                         <Typography variant={"h2"}>
                             Competitor analysis
                         </Typography>
-                        <img style={myStyle} src={"../competitors/EmpowerRetirement.jpeg"} height={350}
+                        <img style={myStyle} src={"../competitors/EmpowerRetirement.jpeg"} width={"45%"}
                              alt={"Empower Retirement Example Screen"}/>
-                        <img style={myStyle} src={"../competitors/MINT.gif"} height={350} alt={"Mint Example Screen"}/>
-                        <img style={myStyle} src={"../competitors/PersonalCapital.png"} height={350}
+                        <img style={myStyle} src={"../competitors/MINT.gif"} width={"55%"} alt={"Mint Example Screen"}/>
+                        <img style={myStyle} src={"../competitors/PersonalCapital.png"} width={"37%"}
                              alt={"Personal Capital Example Screen"}/>
-                        <img style={myStyle} src={"../competitors/Robinhood.PNG"} height={350}
+                        <img style={myStyle} src={"../competitors/Robinhood.PNG"} width={"13%"}
                              alt={"RobinHood Example Screen"}/>
-                        <img style={myStyle} src={"../competitors/YNAB.jpg"} height={350}
+                        <img style={myStyle} src={"../competitors/YNAB.jpg"} width={"40%"}
                              alt={"You Need A Budget Example Screen"}/>
                         <Typography variant={"body1"}>
                             Example Screen From Competitors.
+                        </Typography>
+                    </GridEntry>
+                    <GridEntry left>
+                        <Typography variant={"h2"}>
+                            List of Competitors
+                        </Typography>
+                        <Grid container item xs={12} spacing={1}>
+                            <Grid item xs={6}>
+                                <Paper>Competitor</Paper>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Paper>Features</Paper>
+                            </Grid>
+                        </Grid>
+                        <Grid container item xs={12} spacing={1}>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    Personal Capital
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    - Free version provides a sufficient amount of functionality for everyday use.
+                                    <br/>- Keep track of every financial related activity in just one place.
+                                    <br/>- Long term plan calculator for retirement goals looks fancy.
+                                </Paper>
+                            </Grid>
+                        </Grid>
+                        <Grid container item xs={12} spacing={1}>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    You Need a Budget
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    - The system focuses on removing the barriers of tracking spending and allows
+                                    the user to stay on top of all their spending at all times.
+                                    <br/>- The value proposition to the user is the ability to see how they are doing
+                                    against their budgets in real time.
+                                    <br/>- The system has integrations to many financial institutions like Credit Card
+                                    companies and Banks.
+                                </Paper>
+                            </Grid>
+                        </Grid>
+                        <Grid container item xs={12} spacing={1}>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    Mint
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    - With plenty functions & totally free.
+                                    <br/>- Keep track of every financial related activity in just one place.
+                                    <br/>- Some users review that they actually gain credit scores since they were able
+                                    to closely monitor their financial state.
+                                </Paper>
+                            </Grid>
+                        </Grid>
+                        <Grid container item xs={12} spacing={1}>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    RobinHood
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    - RobinHood offers no trading fees and a simple interface that allows users to
+                                    start trading shortly after depositing funds from their bank account.
+                                    <br/>- It lets users keep track of the companies they’re currently trading and also
+                                    the companies that they’d like to keep an eye on.
+                                </Paper>
+                            </Grid>
+                        </Grid>
+                        <Grid container item xs={12} spacing={1}>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    Robinhood
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Paper style={section}>
+                                    <br/>- It is easy to use without any prior financial knowledge and only basic
+                                    computer knowledge.
+                                    <br/>- It is a reputable company that many people trust to handle their money as it
+                                    is the second largest retirement services company in the United States.
+                                    <br/>- Some users review that they actually gain credit scores since they were able
+                                    to closely monitor their financial state.
+                                </Paper>
+                            </Grid>
+                        </Grid>
+                        <Typography variant={"body1"}>
+                            The table above shows a handful of usability issues we identified during our evaluations
+                            along with their assigned priorities and proposed fixes.
                         </Typography>
                     </GridEntry>
                     <GridEntry right>
@@ -160,9 +255,9 @@ function App() {
                         <Typography variant={"h2"}>
                             Persona
                         </Typography>
-                        <img style={myStyle} src={"../personas/Clarice.png"} width={400} alt={"Clarice Persona"}/>
-                        <img style={myStyle} src={"../personas/Jose.png"} width={400} alt={"Jose Persona"}/>
-                        <img style={myStyle} src={"../personas/Mizuha.png"} width={400} alt={"Mizuha Persona"}/>
+                        <img style={myStyle} src={"../personas/Clarice.png"} width={"100%"} alt={"Clarice Persona"}/>
+                        <img style={myStyle} src={"../personas/Jose.png"} width={"100%"} alt={"Jose Persona"}/>
+                        <img style={myStyle} src={"../personas/Mizuha.png"} width={"100%"} alt={"Mizuha Persona"}/>
                         <Typography variant={"body1"}>
                             Our three personas detailing our user types.
                         </Typography>
@@ -186,15 +281,14 @@ function App() {
                         <Typography variant={"h2"}>
                             Low-Fidelity Wireframes
                         </Typography>
-                        <img style={myStyle} src={"../LowFidWireframes.png"} width={850} alt={"Wireframe screens"}/>
+                        <img style={myStyle} src={"../LowFidWireframes.png"} width={"100%"} alt={"Wireframe screens"}/>
                         <Typography variant={"body1"}>
                             A portion of our wireframe screens.
                         </Typography>
                         <Typography align={"left"} variant={"body1"}>
                             Based on our user research, we used Figma to construct a low fidelity wireframe of our
-                            application here (hyperlink to
-                            https://www.figma.com/proto/bkBcyLvWdyUgUEByI0oEQ3/Wireframe-and-Prototype?node-id=8%3A1630&scaling=scale-down&page-id=0%3A1
-                            ) We began with a low fidelity wireframe to act as an initial blueprint to help users focus
+                            application <a
+                            href={"https://www.figma.com/proto/bkBcyLvWdyUgUEByI0oEQ3/Wireframe-and-Prototype?node-id=8%3A1630&scaling=scale-down&page-id=0%3A1"}>here.</a>
                             on the application’s key purpose and functionality rather than its aesthetic. Our wireframe
                             can be broken down into 4 main sections:
                         </Typography>
@@ -246,10 +340,11 @@ function App() {
                         <Typography align={"left"} variant={"body1"}>
                             Based on these user evaluations, we compiled a list of usability issues. We then fixed these
                             issues and constructed our high-fidelity prototype. Our team members then compiled our own
-                            list of usability issues based on the Nielsen Norman Group’s 10 Usability Heuristics for
-                            User Interface Design. (hyperlink to
-                            https://www.nngroup.com/articles/ten-usability-heuristics/ ) We prioritized the issues on a
-                            scale from 0-4 and addressed the most important issues for our final design. Our final
+                            list of usability issues based on the <a
+                            href={"https://www.nngroup.com/articles/ten-usability-heuristics/"}> Nielsen Norman Group’s
+                            10 Usability Heuristics for
+                            User Interface Design</a> scale from 0-4 and addressed the most important issues for our
+                            final design. Our final
                             interactive prototype can be found <a
                             href={"https://www.figma.com/proto/bkBcyLvWdyUgUEByI0oEQ3/Wireframe-%26-Prototype?node-id=238%3A467&scaling=scale-down&page-id=238%3A467"}>here.</a>
                         </Typography>
@@ -388,9 +483,9 @@ function App() {
                         </Typography>
                     </GridEntry>
                     <GridEntry left>
-                        <img style={myStyle} src={"../prototype/Grab1.png"} height={800}
+                        <img style={myStyle} src={"../prototype/Grab1.png"} width={"50%"}
                              alt={"Before change screen for Dashboard"}/>
-                        <img style={myStyle} src={"../prototype/Grab2.png"} height={800}
+                        <img style={myStyle} src={"../prototype/Grab2.png"} width={"50%"}
                              alt={"After change screen for Dashboard"}/>
                         <Typography variant={"body1"}>
                             (Left- Before) Dashboard did not summarize progress enough and definitions were unclear.
@@ -399,9 +494,9 @@ function App() {
                         </Typography>
                     </GridEntry>
                     <GridEntry right>
-                        <img style={myStyle} src={"../prototype/Grab3.png"} height={800}
+                        <img style={myStyle} src={"../prototype/Grab3.png"} width={"50%"}
                              alt={"Before change screen for Linked Account"}/>
-                        <img style={myStyle} src={"../prototype/Grab4.png"} height={800}
+                        <img style={myStyle} src={"../prototype/Grab4.png"} width={"50%"}
                              alt={"After change screen for Linked Accounts"}/>
                         <Typography variant={"body1"}>
                             (Left- Before) The Linked Accounts page was unclear how to edit and remove certain accounts.
@@ -410,9 +505,9 @@ function App() {
                         </Typography>
                     </GridEntry>
                     <GridEntry left>
-                        <img style={myStyle} src={"../prototype/Grab5.png"} height={750}
+                        <img style={myStyle} src={"../prototype/Grab5.png"} width={"50%"}
                              alt={"Before change screen for Portfolio Performance Report"}/>
-                        <img style={myStyle} src={"../prototype/Grab6.png"} height={750}
+                        <img style={myStyle} src={"../prototype/Grab6.png"} width={"50%"}
                              alt={"After change screen for Portfolio Performance Report"}/>
                         <Typography variant={"body1"}>
                             (Left- Before) It was hard for users to draw a conclusion on their overall performance and
@@ -422,9 +517,9 @@ function App() {
                         </Typography>
                     </GridEntry>
                     <GridEntry right>
-                        <img style={myStyle} src={"../prototype/Grab7.png"} height={750}
+                        <img style={myStyle} src={"../prototype/Grab7.png"} width={"50%"}
                              alt={"Before change screen for Budget History"}/>
-                        <img style={myStyle} src={"../prototype/Grab8.png"} height={750}
+                        <img style={myStyle} src={"../prototype/Grab8.png"} width={"50%"}
                              alt={"After change screen for Budget History"}/>
                         <Typography variant={"body1"}>
                             (Left- Before) It was hard for users to draw a conclusion on their overall performance based
@@ -434,14 +529,14 @@ function App() {
                         </Typography>
                     </GridEntry>
                     <GridEntry>
-                        <img style={myStyle} src={"../prototype/Grab9.png"} height={575} alt={"Budget Home Screen"}/>
-                        <img style={myStyle} src={"../prototype/Grab10.png"} height={575}
+                        <img style={myStyle} src={"../prototype/Grab9.png"} width={"33.3%"} alt={"Budget Home Screen"}/>
+                        <img style={myStyle} src={"../prototype/Grab10.png"} width={"33.3%"}
                              alt={"Edit Budget Screen Step 1"}/>
-                        <img style={myStyle} src={"../prototype/Grab11.png"} height={575}
+                        <img style={myStyle} src={"../prototype/Grab11.png"} width={"33.3%"}
                              alt={"Edit Budget Screen Step 2"}/>
-                        <img style={myStyle} src={"../prototype/Grab12.png"} height={575}
+                        <img style={myStyle} src={"../prototype/Grab12.png"} width={"33.3%"}
                              alt={"Edit Budget Screen Step 3"}/>
-                        <img style={myStyle} src={"../prototype/Grab13.png"} height={575}
+                        <img style={myStyle} src={"../prototype/Grab13.png"} width={"33.3%"}
                              alt={"Edit Budget Screen Final Step"}/>
                         <Typography variant={"body1"}>
                             The budget feature was made more usable by allowing for more user control and freedom to

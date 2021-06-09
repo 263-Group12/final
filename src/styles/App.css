@@ -36,3 +36,7 @@
 .App-link {
   color: #61dafb;
 }
+
+p {
+  padding: 0;
+}
