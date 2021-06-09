@@ -6,7 +6,6 @@ import {Vector3} from "three";
 
 function Camera(props: any) {
     const {camera} = useThree();
-    const [rad, setRad] = useState(3.1415 / 2);
     const [rot, setRot] = useState(false);
 
     const translation = (angle: any) => {
@@ -14,9 +13,11 @@ function Camera(props: any) {
     }
 
     const mouseWheelHandler = (event: any) => {
-        let delta = (event.deltaY / 500);
+        const dist = document.body.getBoundingClientRect().top;
 
-        let [deltaY, deltaZ, deltaX] = translation(delta + rad);
+        const radians = 2 * 3.1415 * (dist / 2000)
+
+        let [deltaY, deltaZ, deltaX] = translation(radians);
 
         if (camera.position.z < 0) {
             camera.position.set(-deltaX, -deltaY, deltaZ);
@@ -29,11 +30,9 @@ function Camera(props: any) {
             if (rot) camera.rotateZ(2 * 3.1415);
             setRot(false);
         }
-
-        setRad(delta + rad);
     };
 
-    useEventListener("mousewheel", mouseWheelHandler);
+    useEventListener("scroll", mouseWheelHandler);
     // @ts-ignore
     useEffect(() => camera.position.set(0, 0, 4), [camera.position]);
 
